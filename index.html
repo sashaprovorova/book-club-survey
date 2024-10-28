@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0"/>
+    <title>Survey Form</title>
+    <link href="./styles/global.css" rel="stylesheet"/>
+    <link href="./styles/style.css" rel="stylesheet"/>
+  </head>
+  <body class="end-of-year-form">
+    <section class="dark-back">
+      <div class="stationary-words">
+        <h1 class="title" id="title">
+          End-of-Year Book Club Survey
+        </h1>
+        <p class="description" id="description">
+          Thanks for being a part of our book club! Let us know how we can make next year even more fun and engaging by filling out this survey.
+        </p>
+      </div>
+      <form action="adressToSendTheFormTo" method="POST" id="survey-form" class="survey-form">
+        <fieldset class="form-parts">
+          <label class="label-item label-item-row" id="name-label" for="name">
+            Enter your name:
+            <input class="name-email" id="name" type="text" placeholder="First Last" required></input>
+          </label>
+          <label class="label-item label-item-row" id="email-label" for="email">
+            Enter your email:
+            <input class="name-email" id="email" type="email" placeholder="YourEmail@gmail.com" required></input>
+          </label>
+          <label class="label-item label-item-row" id="number-label"  for="number">
+            Number of meetings attended: 
+            <input id="number" type="number" placeholder="#" min="0" max="40" required></input>
+          </label>
+        </fieldset>
+        <h2 class="big-topics">
+          General Experience
+        </h2>
+        <fieldset class="form-parts">
+          <label class="label-item label-item-row" >
+            How would you rate your overall experience with the book club this year?
+            <select class="dropdown" id="dropdown">
+              <option value="0">
+                Select an option
+              </option>
+              <option value="1">
+                Great!
+              </option>
+              <option value="2">
+                Good
+              </option>
+              <option value="3">
+                Neutral
+              </option>
+              <option value="4">
+                Bad
+              </option>
+              <option value="5">
+                Terrible
+              </option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="form-parts">
+          <legend class="legend-white">
+            Did you feel encouraged to participate during meetings?
+          </legend>
+        <label class="label-item label-item-row" for="yes">
+          <input type="radio" value="1" name="yes-no" id="yes" checked></input>Yes</label>
+        <label class="label-item label-item-row" for="no">
+          <input id="no" name="yes-no" value="2"type="radio"></input>No
+        </label>
+        </fieldset>
+        <h2 class="big-topics">
+          Book Selection
+        </h2>
+        <fieldset class="form-parts">
+          <label class="label-item label-item-row" >
+            How satisfied were you with the book selections?
+            <select class="dropdown" id="dropdown">
+              <option value="0">
+                Select an option
+              </option>
+              <option value="1">
+                Very satisfied
+              </option>
+              <option value="2">
+                Satisfied
+              </option>
+              <option value="3">
+                Neutral
+              </option>
+              <option value="4">
+                Not so much
+              </option>
+              <option value="5">
+                Dissatisfied
+              </option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="form-parts">
+          <label class="label-item label-item-column" for="textarea">
+            Was there a book throughout the year you particularly enjoyed or disliked? Why?
+            <textarea rows="5" cols="50" id="textarea"></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="form-parts">
+          <legend class="legend-white">
+            What genres or types of books would you like to see more of?
+          </legend>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="1"></input> Fantasy/SciFi
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="2"></input> Action/Adventure
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="3"></input> Comedy
+          </label>
+           <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="4"></input> Crime/Detective
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="5"></input> Romance
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="6"></input> Horror
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="7"></input> Nonfiction
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="8"></input> Self-Help & Personal Development
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="9"></input> Historical Fiction
+          </label>
+        </fieldset>
+        <h2 class="big-topics">
+          Meeting Structure
+        </h2>
+        <fieldset class="form-parts">
+          <label class="label-item label-item-row" >
+            Did the meeting frequency feel appropriate?
+            <select class="dropdown" id="dropdown">
+              <option value="0">
+                Select an option
+              </option>
+              <option value="1">
+                Too frequent
+              </option>
+              <option value="2">
+                Just right
+              </option>
+              <option value="3">
+                Not frequent enough
+              </option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="form-parts">
+          <label class="label-item label-item-column" for="textarea">
+            How did you feel about the balance between open discussion and guided questions? <textarea rows="5" cols="50" id="textarea"></textarea>
+          </label>
+        </fieldset>
+        <h2 class="big-topics">
+          Activities & Future Suggestions
+        </h2>
+        <fieldset class="form-parts">
+          <legend class="legend-white">
+            Would you be interested in more virtual events?
+          </legend>
+        <label class="label-item label-item-row" for="yes">
+          <input type="radio" value="1" name="yes-no-maybe" id="yes" checked></input> Yes, of course!
+        </label>
+        <label class="label-item label-item-row" for="no">
+          <input id="maybe" name="yes-no-maybe" value="2"type="radio"></input> Maybe
+        </label>
+        <label class="label-item label-item-row" for="no">
+          <input id="no" name="yes-no-maybe" value="2"type="radio"></input> Absolutely not
+        </label>
+        </fieldset>
+        <fieldset class="form-parts">
+          <legend class="legend-white">
+            What additional activities or events would you like to see?
+          </legend>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="1" ></input> Guest Speakers or Panels
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="2" ></input> Themed Events
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="3"></input> Book Swaps/Exchanges
+          </label>
+           <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="4" ></input> Book-Themed Trivia Nights
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="5" ></input> Movie Nights for Book Adaptations
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="5" ></input> Workshops on Writing 
+          </label>
+          <label class="label-item label-item-row" for="check">
+            <input type="checkbox" id="check" value="5" ></input> Reading Challenges or Contests
+          </label>
+        </fieldset>
+        <fieldset class="form-parts">
+          <label class="label-item label-item-column" for="textarea">
+            Any other comments or feedback?
+            <textarea rows="5" cols="50" id="textarea"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" class="submit" id="submit"></input>
+      </form>
+    </section>
+  </body>
+</html>
